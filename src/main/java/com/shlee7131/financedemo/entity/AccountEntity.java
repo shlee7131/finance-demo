@@ -10,8 +10,11 @@ import org.springframework.stereotype.Component;
 public class AccountEntity {
     private final DBRepository<Account> repo;
 
-    public Account findById() {
-        System.out.println("hello");
-        return repo.findById();
+    public Account findById(int id) {
+        return repo.findById(id);
+    }
+
+    public Account save(Account account){
+        return repo.save(account);
     }
 }
