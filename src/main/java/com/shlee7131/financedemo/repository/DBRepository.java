@@ -1,4 +1,4 @@
-package com.shlee7131.financedemo.infra.repo;
+package com.shlee7131.financedemo.repository;
 
 import java.util.List;
 

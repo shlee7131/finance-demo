@@ -1,7 +1,7 @@
 package com.shlee7131.financedemo.entity;
 
 import com.shlee7131.financedemo.entity.domain.Account;
-import com.shlee7131.financedemo.infra.repo.DBRepository;
+import com.shlee7131.financedemo.repository.DBRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
 

@@ -2,16 +2,9 @@ package com.shlee7131.financedemo.service;
 
 import com.shlee7131.financedemo.TestConfigContainer;
 import com.shlee7131.financedemo.entity.User;
-import com.shlee7131.financedemo.infra.repo.UserRepository;
+import com.shlee7131.financedemo.repository.UserRepository;
 import com.shlee7131.financedemo.service.dto.*;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.annotation.Commit;
-import org.springframework.test.annotation.Rollback;
-import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Transactional;
 import java.util.Optional;
 

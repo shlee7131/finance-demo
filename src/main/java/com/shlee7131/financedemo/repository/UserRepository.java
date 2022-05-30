@@ -1,4 +1,4 @@
-package com.shlee7131.financedemo.infra.repo;
+package com.shlee7131.financedemo.repository;
 
 import com.shlee7131.financedemo.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;

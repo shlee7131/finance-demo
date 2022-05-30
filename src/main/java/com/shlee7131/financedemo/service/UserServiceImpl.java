@@ -1,27 +1,17 @@
 package com.shlee7131.financedemo.service;
 
 import com.shlee7131.financedemo.entity.User;
-import com.shlee7131.financedemo.exception.BadRequestException;
-import com.shlee7131.financedemo.infra.repo.UserRepository;
+import com.shlee7131.financedemo.repository.UserRepository;
 import com.shlee7131.financedemo.service.dto.UserReqDto;
 import com.shlee7131.financedemo.service.dto.UserRespDto;
 import com.shlee7131.financedemo.service.dto.UserUpdateDto;
-import com.sun.xml.bind.v2.runtime.output.SAXOutput;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
-import org.springframework.context.annotation.Bean;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageImpl;
-import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
-import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
-import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @Slf4j
 @Service

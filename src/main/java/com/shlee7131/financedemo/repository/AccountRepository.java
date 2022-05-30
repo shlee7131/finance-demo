@@ -1,7 +1,6 @@
-package com.shlee7131.financedemo.infra;
+package com.shlee7131.financedemo.repository;
 
 import com.shlee7131.financedemo.entity.domain.Account;
-import com.shlee7131.financedemo.infra.repo.DBRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;

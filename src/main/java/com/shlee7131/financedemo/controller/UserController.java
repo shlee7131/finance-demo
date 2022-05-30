@@ -1,6 +1,5 @@
 package com.shlee7131.financedemo.controller;
 
-import com.shlee7131.financedemo.entity.User;
 import com.shlee7131.financedemo.exception.BadRequestException;
 import com.shlee7131.financedemo.exception.ResourceNotFoundException;
 import com.shlee7131.financedemo.service.UserService;
