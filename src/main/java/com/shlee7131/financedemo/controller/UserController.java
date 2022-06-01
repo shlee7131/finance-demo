@@ -7,10 +7,13 @@ import com.shlee7131.financedemo.service.dto.UserReqDto;
 import com.shlee7131.financedemo.service.dto.UserRespDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 import java.util.Optional;
 
@@ -47,11 +50,5 @@ public class UserController {
         if (userRespDto.isEmpty()) throw new ResourceNotFoundException("유저 정보를 다시 입력해주세요");
 
         return new ResponseEntity<>(null,HttpStatus.NO_CONTENT);
-    }
-
-    @PostMapping("/login")
-    public ResponseEntity<UserRespDto> login(@RequestBody UserReqDto userReqDto) {
-        // TODO
-        return null;
     }
 }
