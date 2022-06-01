@@ -13,5 +13,4 @@ public interface UserService {
     Optional<UserRespDto> readUserById(Long id);
     Optional<UserRespDto> updateUser(Long id, UserUpdateDto userUpdateDto);
     Optional<UserRespDto> deleteUser(Long id);
-    boolean login(UserReqDto userReqDto);
 }

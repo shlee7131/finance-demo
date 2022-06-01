@@ -70,31 +70,16 @@ public class UserServiceImpl implements UserService {
         return Optional.ofNullable(userRespDto);
     }
 
-    @Override
-    public boolean login(UserReqDto userReqDto) {
-        Optional<User> byEmail = repository.findByEmail(userReqDto.getEmail());
-        if (byEmail.isEmpty()) return false;
-        User user = byEmail.get();
-        if (user.matchPassword(userReqDto.getPassword())) return true;
-        return false;
-    }
 
     public <T,R> R transform(T t, Class<R> type) {
-        Object object = null;
+        R object = null;
         try {
             object = type.getConstructor().newInstance();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (InvocationTargetException e) {
-            e.printStackTrace();
-        } catch (NoSuchMethodException e) {
+            BeanUtils.copyProperties(t, object);
+        } catch (InstantiationException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {
             e.printStackTrace();
         }
 
-        BeanUtils.copyProperties(t, object);
-
-        return (R)object;
+        return object;
     }
 }
