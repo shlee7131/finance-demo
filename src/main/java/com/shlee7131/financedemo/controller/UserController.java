@@ -23,17 +23,6 @@ import java.util.Optional;
 public class UserController {
     private final UserService userService;
 
-    @PostMapping("/register")
-    public ResponseEntity<UserRespDto> register(@Valid @RequestBody UserReqDto userReqDto) {
-        Optional<UserRespDto> userRespDto = userService.createUser(userReqDto);
-        log.info("userReqDto: {}",userReqDto.toString());
-        log.info("userRespDto: {}", userRespDto.toString());
-
-        if (userRespDto.isEmpty()) throw new BadRequestException("이메일이 중복됩니다");
-
-        return new ResponseEntity<>(userRespDto.get(), HttpStatus.CREATED);
-    }
-
     @GetMapping("/users/{id}")
     public ResponseEntity<UserRespDto> getUserById(@PathVariable Long id) {
         Optional<UserRespDto> userRespDto = userService.readUserById(id);
