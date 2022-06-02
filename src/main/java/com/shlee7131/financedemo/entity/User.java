@@ -2,16 +2,12 @@ package com.shlee7131.financedemo.entity;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 import lombok.ToString;
-import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
-import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 
 @Entity
@@ -26,7 +22,9 @@ public class User extends Commons {
     @Column(unique = true)
     private String email;
     private String password;
-    private int account_id;
+
+    @OneToMany(mappedBy = "user")
+    private List<Account> accounts = new ArrayList<>();
 
     public User(String email, String password){
         this.email = email;
@@ -46,7 +44,7 @@ public class User extends Commons {
         this.password = password;
     }
 
-    public void setAccount_id(int account_id) {
-        this.account_id = account_id;
+    public void setAccounts(Account account) {
+        this.accounts.add(account);
     }
 }

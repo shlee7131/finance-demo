@@ -18,7 +18,6 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class UserServiceImpl implements UserService {
     private final UserRepository repository;
-    private Integer account_id_sequence = 0;
 
     @Override
     public Optional<UserRespDto> createUser(UserReqDto userReqDto) {
@@ -27,7 +26,6 @@ public class UserServiceImpl implements UserService {
         if (byEmail.isPresent()) return Optional.empty();
 
         User user = transform(userReqDto, User.class);
-        user.setAccount_id(++account_id_sequence);
         UserRespDto userRespDto = transform(user, UserRespDto.class);
 
         repository.save(user);

@@ -1,9 +1,12 @@
 package com.shlee7131.financedemo.service.dto;
 
+import com.shlee7131.financedemo.entity.Account;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -11,5 +14,5 @@ import lombok.ToString;
 @ToString
 public class UserRespDto {
     private String email;
-    private Integer account_id;
+    private List<Account> accounts;
 }
