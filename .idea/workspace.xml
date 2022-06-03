@@ -4,7 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1f06e67-4eff-46a7-9ea9-bbdc93b79dfb" name="Changes" comment="" />
+    <list default="true" id="d1f06e67-4eff-46a7-9ea9-bbdc93b79dfb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/repository/AccountRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/AccountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/dto/AccountReqDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/dto/AccountRespDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/dto/AuthInfoDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/SessionStorage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/SessionStorage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/entity/Account$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/entity/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/entity/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/entity/AccountSubject$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/entity/AccountSubject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/entity/AccountSubject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/service/AuthServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/service/AuthServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/shlee7131/financedemo/entity/AccountTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/shlee7131/financedemo/service/AuthServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/shlee7131/financedemo/service/AuthServiceImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/SessionStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/SessionStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/AuthServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/shlee7131/financedemo/service/AuthServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/shlee7131/financedemo/service/AuthServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/shlee7131/financedemo/service/UserServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/shlee7131/financedemo/service/UserServiceImplTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,9 +69,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -65,11 +87,11 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/entity/Commons.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/FinanceDemoApplication.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/test/java/com/shlee7131/financedemo/FinanceDemoApplicationTests.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/UserServiceImpl.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/entity/Commons.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/entity/User.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/FinanceDemoApplication.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/test/java/com/shlee7131/financedemo/TestConfigContainer.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/TestConfig.java" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -91,6 +113,7 @@
   </component>
   <component name="ProjectId" id="29NZMiRF8lYVfhISNyWUX9pCwWm" />
   <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -124,10 +147,11 @@
       <recent name="com.shlee7131.financedemo.infra" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.shlee7131.financedemo.service.dto" />
       <recent name="com.shlee7131.financedemo.infra" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AccountTest.test">
+  <component name="RunManager" selected="JUnit.UserServiceImplTest.회원탈퇴">
     <configuration name="AccountTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="finance-demo.test" />
       <extension name="coverage">
@@ -159,38 +183,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AuthServiceImplTest.인증실패" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="finance-demo.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.shlee7131.financedemo.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.shlee7131.financedemo.service" />
-      <option name="MAIN_CLASS_NAME" value="com.shlee7131.financedemo.service.AuthServiceImplTest" />
-      <option name="METHOD_NAME" value="인증실패" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AuthServiceImplTest.login" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="finance-demo.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.shlee7131.financedemo.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.shlee7131.financedemo.service" />
-      <option name="MAIN_CLASS_NAME" value="com.shlee7131.financedemo.service.AuthServiceImplTest" />
-      <option name="METHOD_NAME" value="login" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="finance-demo.test" />
       <extension name="coverage">
@@ -206,7 +198,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceImplTest.회원가입_성공" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserServiceImplTest.회원탈퇴" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="finance-demo.test" />
       <extension name="coverage">
         <pattern>
@@ -216,7 +208,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.shlee7131.financedemo.service" />
       <option name="MAIN_CLASS_NAME" value="com.shlee7131.financedemo.service.UserServiceImplTest" />
-      <option name="METHOD_NAME" value="회원가입_성공" />
+      <option name="METHOD_NAME" value="회원탈퇴" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -234,6 +226,20 @@
       <option name="MAIN_CLASS_NAME" value="com.shlee7131.financedemo.service.UserServiceImplTest" />
       <option name="METHOD_NAME" value="회원가입_성공" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.shlee7131.financedemo.service in finance-demo.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="finance-demo.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shlee7131.financedemo.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shlee7131.financedemo.service" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -247,11 +253,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserServiceImplTest.회원탈퇴" />
+        <item itemvalue="JUnit.UserServiceImplTest" />
+        <item itemvalue="JUnit.com.shlee7131.financedemo.service in finance-demo.test" />
         <item itemvalue="JUnit.AccountTest.test" />
         <item itemvalue="JUnit.AuthServiceImplTest" />
-        <item itemvalue="JUnit.AuthServiceImplTest.인증실패" />
-        <item itemvalue="JUnit.AuthServiceImplTest.login" />
-        <item itemvalue="JUnit.UserServiceImplTest" />
       </list>
     </recent_temporary>
   </component>
@@ -270,7 +276,8 @@
       <workItem from="1653881083786" duration="16176000" />
       <workItem from="1653911174386" duration="15423000" />
       <workItem from="1653986501059" duration="17767000" />
-      <workItem from="1654135154850" duration="14906000" />
+      <workItem from="1654135154850" duration="15224000" />
+      <workItem from="1654215256253" duration="3774000" />
     </task>
     <servers />
   </component>

@@ -3,6 +3,7 @@ package com.shlee7131.financedemo.service;
 import com.shlee7131.financedemo.SessionStorage;
 import com.shlee7131.financedemo.entity.User;
 import com.shlee7131.financedemo.repository.UserRepository;
+import com.shlee7131.financedemo.service.dto.AuthInfoDto;
 import com.shlee7131.financedemo.service.dto.UserReqDto;
 import com.shlee7131.financedemo.service.dto.UserRespDto;
 import lombok.RequiredArgsConstructor;
@@ -29,9 +30,9 @@ public class AuthServiceImpl implements AuthService {
         if (!user.matchPassword(userReqDto.getPassword())) return Optional.empty();
 
 
-        UserRespDto userRespDto = transform(user, UserRespDto.class);
+        AuthInfoDto authInfoDto = transform(user, AuthInfoDto.class);
         String sessionId = createSessionId(userReqDto);
-        sessionStorage.put(sessionId, userRespDto);
+        sessionStorage.put(sessionId, authInfoDto);
 
         return Optional.ofNullable(sessionId);
 

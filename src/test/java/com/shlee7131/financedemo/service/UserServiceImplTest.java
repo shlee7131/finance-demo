@@ -37,6 +37,7 @@ class UserServiceImplTest {
     @Test
     void 회원탈퇴(){
         UserReqDto userReqDto = new UserReqDto("shlee7133@gmail.com","1234");
+
         Optional<UserRespDto> user = userService.createUser(userReqDto);
         User find = userRepository.findByEmail("shlee7133@gmail.com").get();
 
@@ -64,7 +65,6 @@ class UserServiceImplTest {
         UserRespDto userRespDto = userService.createUser(userReqDto).get();
         Optional<User> user = userRepository.findByEmail("shlee7135@gmail.com");
         assertThat(userRespDto.getEmail()).isEqualTo("shlee7135@gmail.com");
-        assertThat(userRespDto.getAccount_id()).isEqualTo(user.get().getAccounts());
     }
 
 }

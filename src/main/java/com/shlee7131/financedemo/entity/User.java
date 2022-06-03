@@ -23,7 +23,7 @@ public class User extends Commons {
     private String email;
     private String password;
 
-    @OneToMany(mappedBy = "user")
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
     private List<Account> accounts = new ArrayList<>();
 
     public User(String email, String password){
@@ -44,7 +44,11 @@ public class User extends Commons {
         this.password = password;
     }
 
-    public void setAccounts(Account account) {
+    public void setAccounts(List<Account> accounts) {
+        this.accounts = accounts;
+    }
+
+    public void addAccount(Account account){
         this.accounts.add(account);
     }
 }
