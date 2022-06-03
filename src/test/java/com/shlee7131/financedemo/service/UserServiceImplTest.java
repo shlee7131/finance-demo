@@ -64,7 +64,7 @@ class UserServiceImplTest {
         UserRespDto userRespDto = userService.createUser(userReqDto).get();
         Optional<User> user = userRepository.findByEmail("shlee7135@gmail.com");
         assertThat(userRespDto.getEmail()).isEqualTo("shlee7135@gmail.com");
-        assertThat(userRespDto.getAccount_id()).isEqualTo(user.get().getAccounts());
+        assertThat(userRespDto.getAccounts()).isEqualTo(user.get().getAccounts());
     }
 
 }

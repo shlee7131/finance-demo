@@ -1,6 +1,7 @@
 package com.shlee7131.financedemo.service;
 
 import com.shlee7131.financedemo.entity.User;
+import com.shlee7131.financedemo.exception.BadRequestException;
 import com.shlee7131.financedemo.repository.UserRepository;
 import com.shlee7131.financedemo.service.dto.UserReqDto;
 import com.shlee7131.financedemo.service.dto.UserRespDto;
@@ -16,14 +17,14 @@ import java.util.Optional;
 @Slf4j
 @Service
 @RequiredArgsConstructor
-public class UserServiceImpl implements UserService {
+public class UserServiceImpl implements UserService{
     private final UserRepository repository;
 
     @Override
     public Optional<UserRespDto> createUser(UserReqDto userReqDto) {
         // 중복 등록 방지
         Optional<User> byEmail = repository.findByEmail(userReqDto.getEmail());
-        if (byEmail.isPresent()) return Optional.empty();
+        if (byEmail.isPresent()) throw new BadRequestException("회원정보 중복입니다");
 
         User user = transform(userReqDto, User.class);
         UserRespDto userRespDto = transform(user, UserRespDto.class);
