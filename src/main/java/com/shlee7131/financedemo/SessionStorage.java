@@ -1,8 +1,6 @@
 package com.shlee7131.financedemo;
 
 import com.shlee7131.financedemo.service.dto.AuthInfoDto;
-import com.shlee7131.financedemo.service.dto.UserReqDto;
-import com.shlee7131.financedemo.service.dto.UserRespDto;
 import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Service;
 

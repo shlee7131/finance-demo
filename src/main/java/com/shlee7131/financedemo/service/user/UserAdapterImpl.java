@@ -1,4 +1,4 @@
-package com.shlee7131.financedemo.service;
+package com.shlee7131.financedemo.service.user;
 
 import com.shlee7131.financedemo.entity.User;
 import com.shlee7131.financedemo.service.dto.UserReqDto;
@@ -13,28 +13,30 @@ import java.util.Optional;
 
 @Component
 @RequiredArgsConstructor
-public class UserServiceInteractor implements UserAdapter{
+public class UserAdapterImpl implements UserAdapter{
     private final UserService userService;
 
     @Override
-    public Optional<UserRespDto> createUser(UserReqDto userReqDto) {
-        Optional<User> user = userService.createUser(transform(userReqDto, User.class));
+    public UserRespDto createUser(UserReqDto userReqDto) {
+        User user = userService.createUser(transform(userReqDto, User.class));
+        return transform(user, UserRespDto.class);
+    }
+
+    @Override
+    public Optional<UserRespDto> readUserById(Long id) {
+        Optional<User> user = userService.readUserById(id);
         return Optional.ofNullable(transform(user.get(), UserRespDto.class));
     }
 
     @Override
-    public Optional<UserRespDto> readUser(UserReqDto userReqDto) {
-        return Optional.empty();
-    }
-
-    @Override
     public Optional<UserRespDto> updateUser(UserUpdateDto userUpdateDto) {
-        return Optional.empty();
+        Optional<User> user = userService.updateUser(userUpdateDto.getId(), transform(userUpdateDto, User.class));
+        return Optional.ofNullable(transform(user.get(), UserRespDto.class));
     }
 
     @Override
-    public Optional<UserRespDto> deleteUser(UserReqDto userReqDto) {
-        return Optional.empty();
+    public void deleteUser(Long id) {
+        userService.deleteUser(id);
     }
 
     public <T,R> R transform(T t, Class<R> type) {
@@ -45,7 +47,6 @@ public class UserServiceInteractor implements UserAdapter{
         } catch (InstantiationException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {
             e.printStackTrace();
         }
-
         return object;
     }
 }
