@@ -64,7 +64,6 @@ public class UserServiceImpl implements UserService{
         } catch (InstantiationException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {
             e.printStackTrace();
         }
-
         return object;
     }
 }

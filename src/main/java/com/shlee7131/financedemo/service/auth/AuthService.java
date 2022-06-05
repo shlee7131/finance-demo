@@ -1,4 +1,4 @@
-package com.shlee7131.financedemo.service;
+package com.shlee7131.financedemo.service.auth;
 
 import com.shlee7131.financedemo.service.dto.UserReqDto;
 

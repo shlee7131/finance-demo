@@ -2,7 +2,7 @@ package com.shlee7131.financedemo.infra;
 
 
 import com.shlee7131.financedemo.exception.BadRequestException;
-import com.shlee7131.financedemo.service.AuthService;
+import com.shlee7131.financedemo.service.auth.AuthService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;

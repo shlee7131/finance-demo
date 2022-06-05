@@ -1,7 +1,8 @@
 package com.shlee7131.financedemo.controller;
 
 import com.shlee7131.financedemo.exception.BadRequestException;
-import com.shlee7131.financedemo.service.AuthService;
+import com.shlee7131.financedemo.service.auth.AuthAdapter;
+import com.shlee7131.financedemo.service.auth.AuthService;
 import com.shlee7131.financedemo.service.user.UserAdapter;
 import com.shlee7131.financedemo.service.dto.AuthInfoDto;
 import com.shlee7131.financedemo.service.dto.UserReqDto;
@@ -24,12 +25,11 @@ import java.util.Optional;
 @RestController
 @RequiredArgsConstructor
 public class AuthController {
-    private final AuthService authService;
-    private final UserAdapter userAdapter;
+    private final AuthAdapter authAdapter;
 
     @PostMapping("/auth/local")
     public ResponseEntity<?> login(@Valid @RequestBody UserReqDto userReqDto, HttpServletResponse response) {
-        Optional<String> sessionId = authService.login(userReqDto);
+        Optional<String> sessionId = authAdapter.login(userReqDto);
 
         if (sessionId.isEmpty()) throw new BadRequestException("아이디 또는 비밀번호가 일치하지 않습니다");
 
@@ -44,9 +44,7 @@ public class AuthController {
 
     @PostMapping("/auth/local/new")
     public ResponseEntity<AuthInfoDto> register(@Valid @RequestBody UserReqDto userReqDto) {
-        UserRespDto userRespDto = userAdapter.createUser(userReqDto);
-        AuthInfoDto authInfoDto = new AuthInfoDto();
-        BeanUtils.copyProperties(userRespDto, authInfoDto);
-        return new ResponseEntity<>(authInfoDto, HttpStatus.CREATED);
+        AuthInfoDto register = authAdapter.register(userReqDto);
+        return new ResponseEntity<>(register, HttpStatus.CREATED);
     }
 }
