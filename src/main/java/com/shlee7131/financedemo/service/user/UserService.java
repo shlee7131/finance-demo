@@ -10,6 +10,6 @@ import java.util.Optional;
 public interface UserService {
     User createUser(User userReqDto);
     Optional<User> readUserById(Long id);
-    Optional<User> updateUser(Long id, User user);
+    User updateUser(Long id, User user);
     void deleteUser(Long id);
 }

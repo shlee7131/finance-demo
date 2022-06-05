@@ -29,9 +29,9 @@ public class UserAdapterImpl implements UserAdapter{
     }
 
     @Override
-    public Optional<UserRespDto> updateUser(UserUpdateDto userUpdateDto) {
-        Optional<User> user = userService.updateUser(userUpdateDto.getId(), transform(userUpdateDto, User.class));
-        return Optional.ofNullable(transform(user.get(), UserRespDto.class));
+    public UserRespDto updateUser(UserUpdateDto userUpdateDto) {
+        User user = userService.updateUser(userUpdateDto.getId(), transform(userUpdateDto, User.class));
+        return transform(user, UserRespDto.class);
     }
 
     @Override

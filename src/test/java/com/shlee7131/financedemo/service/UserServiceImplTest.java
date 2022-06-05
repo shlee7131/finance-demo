@@ -66,7 +66,7 @@ class UserServiceImplTest {
         User toUpdate = new User();
         toUpdate.setPassword("asdf");
 
-        User updated = userService.updateUser(id, toUpdate).get();
+        User updated = userService.updateUser(id, toUpdate);
 
         assertThat(updated.getPassword()).isEqualTo("asdf");
     }
