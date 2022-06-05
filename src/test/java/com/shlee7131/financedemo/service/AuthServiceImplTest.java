@@ -1,11 +1,13 @@
 package com.shlee7131.financedemo.service;
 
 import com.shlee7131.financedemo.SessionStorage;
-import com.shlee7131.financedemo.TestConfigContainer;
+import com.shlee7131.financedemo.service.auth.AuthAdapter;
 import com.shlee7131.financedemo.service.dto.AuthInfoDto;
 import com.shlee7131.financedemo.service.dto.UserReqDto;
 import com.shlee7131.financedemo.service.dto.UserRespDto;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
@@ -13,30 +15,31 @@ import java.util.Optional;
 import static org.assertj.core.api.Assertions.assertThat;
 
 
+@SpringBootTest
 @Transactional
 class AuthServiceImplTest {
-    TestConfigContainer container = TestConfigContainer.getInstance();
-    AuthService authService = container.getBean(AuthService.class);
-    UserService userService = container.getBean(UserService.class);
-    SessionStorage sessionStorage = container.getBean(SessionStorage.class);
+    @Autowired
+    AuthAdapter authAdapter;
+    @Autowired
+    SessionStorage sessionStorage;
 
     @Test
     void 로그인_성공(){
         UserReqDto userReqDto = new UserReqDto("shlee7131@gmail.com", "asdf");
-        Optional<UserRespDto> user = userService.createUser(userReqDto);
-        Optional<String> sessionId = authService.login(userReqDto);
+        AuthInfoDto register = authAdapter.register(userReqDto);
+        Optional<String> sessionId = authAdapter.login(userReqDto);
         AuthInfoDto authInfoDto = sessionStorage.get(sessionId.get());
 
-        assertThat(authInfoDto.getEmail()).isEqualTo(user.get().getEmail());
+        assertThat(authInfoDto).isEqualTo(register);
     }
 
     @Test
     void 인증_실패(){
-        UserReqDto userReqDto = new UserReqDto("shlee7132@gmail.com", "asdf");
-        UserReqDto userReqDtoFailure = new UserReqDto("shlee7132@gmail.com", "asdffa");
+        UserReqDto userReqDto = new UserReqDto("shlee7131@gmail.com", "asdf");
+        UserReqDto userReqDtoFailure = new UserReqDto("shlee7131@gmail.com", "asdffa");
 
-        Optional<UserRespDto> user = userService.createUser(userReqDto);
-        Optional<String> sessionId = authService.login(userReqDtoFailure);
+        AuthInfoDto register = authAdapter.register(userReqDto);
+        Optional<String> sessionId = authAdapter.login(userReqDtoFailure);
 
         assertThat(sessionId).isEmpty();
     }

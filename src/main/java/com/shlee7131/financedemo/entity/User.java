@@ -15,7 +15,6 @@ import java.util.List;
 @NoArgsConstructor
 @Table(name="Users")
 @EntityListeners(AuditingEntityListener.class)
-@ToString
 public class User extends Commons {
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -23,7 +22,11 @@ public class User extends Commons {
     private String email;
     private String password;
 
+<<<<<<< HEAD
     @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
+=======
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
+>>>>>>> 735de954447837ab4cba31ff37d4d0911bd982c4
     private List<Account> accounts = new ArrayList<>();
 
     public User(String email, String password){

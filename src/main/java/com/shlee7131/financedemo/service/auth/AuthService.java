@@ -1,8 +1,7 @@
-package com.shlee7131.financedemo.service;
+package com.shlee7131.financedemo.service.auth;
 
-import com.shlee7131.financedemo.entity.User;
 import com.shlee7131.financedemo.service.dto.UserReqDto;
-import org.springframework.data.jpa.repository.JpaRepository;
+
 
 import java.util.Optional;
 
