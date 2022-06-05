@@ -43,16 +43,16 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public Optional<User> updateUser(Long id, User user) {
+    public User updateUser(Long id, User user) {
         Optional<User> byId = repository.findById(id);
 
-        if (byId.isEmpty()) return Optional.empty();
+        if (byId.isEmpty()) throw new BadRequestException("존재하지 않는 유저입니다");
 
         User find = byId.get();
         find.setPassword(user.getPassword() != null ? user.getPassword() : find.getPassword());
 
-        repository.save(find);
-        return Optional.ofNullable(find);
+        User updated = repository.save(find);
+        return updated;
     }
 
 
