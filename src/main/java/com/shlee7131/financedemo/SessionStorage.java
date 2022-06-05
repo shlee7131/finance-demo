@@ -1,7 +1,6 @@
 package com.shlee7131.financedemo;
 
-import com.shlee7131.financedemo.service.dto.UserReqDto;
-import com.shlee7131.financedemo.service.dto.UserRespDto;
+import com.shlee7131.financedemo.service.dto.AuthInfoDto;
 import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -11,14 +10,14 @@ import java.util.Map;
 @Service
 @NoArgsConstructor
 public class SessionStorage {
-    private final Map<String, UserRespDto> store = new HashMap<>();
+    private final Map<String, AuthInfoDto> store = new HashMap<>();
 
-    public UserRespDto put(String sessionId, UserRespDto userRespDto) {
-        store.put(sessionId, userRespDto);
-        return userRespDto;
+    public AuthInfoDto put(String sessionId, AuthInfoDto authInfoDto) {
+        store.put(sessionId, authInfoDto);
+        return authInfoDto;
     }
 
-    public UserRespDto get(String sessionId) {
+    public AuthInfoDto get(String sessionId) {
         return store.get(sessionId);
     }
 }

@@ -12,8 +12,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class UserRespDto {
-    private Long id;
+public class AuthInfoDto {
     private String email;
     private List<Account> accounts;
 }

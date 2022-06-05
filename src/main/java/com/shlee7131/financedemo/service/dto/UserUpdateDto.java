@@ -11,6 +11,7 @@ import javax.validation.constraints.Size;
 @AllArgsConstructor
 @ToString
 public class UserUpdateDto {
+    private Long id;
     @Size(min=3, message = "비밀번호는 3자리 이상이어야 합니다.")
     private String password;
 }

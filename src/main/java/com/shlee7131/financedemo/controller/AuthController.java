@@ -2,33 +2,30 @@ package com.shlee7131.financedemo.controller;
 
 import com.shlee7131.financedemo.exception.BadRequestException;
 import com.shlee7131.financedemo.service.AuthService;
-import com.shlee7131.financedemo.service.UserService;
+import com.shlee7131.financedemo.service.user.UserAdapter;
+import com.shlee7131.financedemo.service.dto.AuthInfoDto;
 import com.shlee7131.financedemo.service.dto.UserReqDto;
 import com.shlee7131.financedemo.service.dto.UserRespDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.BeanUtils;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @Slf4j
 @RestController
 @RequiredArgsConstructor
 public class AuthController {
     private final AuthService authService;
-    private final UserService userService;
+    private final UserAdapter userAdapter;
 
     @PostMapping("/auth/local")
     public ResponseEntity<?> login(@Valid @RequestBody UserReqDto userReqDto, HttpServletResponse response) {
@@ -46,13 +43,10 @@ public class AuthController {
     }
 
     @PostMapping("/auth/local/new")
-    public ResponseEntity<UserRespDto> register(@Valid @RequestBody UserReqDto userReqDto) {
-        Optional<UserRespDto> userRespDto = userService.createUser(userReqDto);
-        log.info("userReqDto: {}",userReqDto.toString());
-        log.info("userRespDto: {}", userRespDto.toString());
-
-        if (userRespDto.isEmpty()) throw new BadRequestException("이메일이 중복됩니다");
-
-        return new ResponseEntity<>(userRespDto.get(), HttpStatus.CREATED);
+    public ResponseEntity<AuthInfoDto> register(@Valid @RequestBody UserReqDto userReqDto) {
+        UserRespDto userRespDto = userAdapter.createUser(userReqDto);
+        AuthInfoDto authInfoDto = new AuthInfoDto();
+        BeanUtils.copyProperties(userRespDto, authInfoDto);
+        return new ResponseEntity<>(authInfoDto, HttpStatus.CREATED);
     }
 }
