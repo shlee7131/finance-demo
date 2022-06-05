@@ -45,12 +45,6 @@ class UserServiceImplTest {
 
     @Test
     void 회원탈퇴(){
-<<<<<<< HEAD
-        UserReqDto userReqDto = new UserReqDto("shlee7133@gmail.com","1234");
-
-        Optional<UserRespDto> user = userService.createUser(userReqDto);
-        User find = userRepository.findByEmail("shlee7133@gmail.com").get();
-=======
         User user = new User("shlee7132@gmail.com","1234");
         User created = userService.createUser(user);
         Long id = created.getId();
@@ -58,7 +52,6 @@ class UserServiceImplTest {
 
         userService.deleteUser(id);
         Optional<User> byId = userRepository.findById(id);
->>>>>>> 735de954447837ab4cba31ff37d4d0911bd982c4
 
 
         assertThat(byId).isEmpty();
@@ -79,19 +72,10 @@ class UserServiceImplTest {
     }
 
     @Test
-<<<<<<< HEAD
-    void 회원정보(){
-        UserReqDto userReqDto = new UserReqDto("shlee7135@gmail.com","1234");
-        UserRespDto userRespDto = userService.createUser(userReqDto).get();
-        Optional<User> user = userRepository.findByEmail("shlee7135@gmail.com");
-        assertThat(userRespDto.getEmail()).isEqualTo("shlee7135@gmail.com");
-    }
-=======
     void 회원정보_조회(){
         User user = new User("shlee7132@gmail.com","1234");
 
         User created = userService.createUser(user);
->>>>>>> 735de954447837ab4cba31ff37d4d0911bd982c4
 
         User find = userRepository.findById(created.getId()).get();
 
