@@ -13,6 +13,7 @@ import java.util.List;
 @AllArgsConstructor
 @ToString
 public class AuthInfoDto {
+    private Long id;
     private String email;
     private List<Account> accounts;
 }

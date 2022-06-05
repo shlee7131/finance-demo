@@ -1,12 +1,10 @@
-package com.shlee7131.financedemo.service;
+package com.shlee7131.financedemo.service.auth;
 
 import com.shlee7131.financedemo.SessionStorage;
 import com.shlee7131.financedemo.entity.User;
-import com.shlee7131.financedemo.exception.BadRequestException;
 import com.shlee7131.financedemo.repository.UserRepository;
 import com.shlee7131.financedemo.service.dto.AuthInfoDto;
 import com.shlee7131.financedemo.service.dto.UserReqDto;
-import com.shlee7131.financedemo.service.dto.UserRespDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
