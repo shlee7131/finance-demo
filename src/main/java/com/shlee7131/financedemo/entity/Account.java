@@ -29,8 +29,8 @@ public class Account extends Commons{
         this.user = user;
     }
 
-    public void setCurrencyCode(CurrencyCode currency_code) {
-        this.currencyCode = currency_code;
+    public void setCurrencyCode(CurrencyCode currencyCode) {
+        this.currencyCode = currencyCode;
     }
 
     public void setJournals(List<Journal> journals) {
