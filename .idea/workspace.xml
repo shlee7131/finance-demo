@@ -5,11 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1f06e67-4eff-46a7-9ea9-bbdc93b79dfb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/controller/AccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/AuthUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/account/AccountAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/account/AccountAdapterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/shlee7131/financedemo/service/AuthServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/shlee7131/financedemo/service/AuthServiceImplTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/shlee7131/financedemo/service/UserServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/shlee7131/financedemo/service/UserServiceImplTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/shlee7131/financedemo/service/UserServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/shlee7131/financedemo/service/UserServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/SessionStorage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/SessionStorage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/TestConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/entity/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/entity/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/infra/AuthInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/infra/AuthInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/service/AuthService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/service/AuthServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/service/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/shlee7131/financedemo/TestConfigContainer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/SessionStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/SessionStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/entity/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/entity/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/infra/AuthInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/infra/AuthInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/repository/AccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/repository/AccountRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/account/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/account/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/dto/AccountReqDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/dto/AccountReqDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/dto/AccountRespDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/dto/AccountRespDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/dto/AuthInfoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/dto/AuthInfoDto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,9 +73,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -112,10 +133,14 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ex1-hello-jpa" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.23826712" />
+    <property name="project.structure.side.proportion" value="0.14903128" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.shlee7131.financedemo.service.account" />
       <recent name="com.shlee7131.financedemo.service" />
       <recent name="com.shlee7131.financedemo.usecase.user" />
     </key>
@@ -135,12 +160,33 @@
       <recent name="com.shlee7131.financedemo.infra" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AuthServiceImplTest.로그인_성공">
+  <component name="RunManager" selected="Spring Boot.FinanceDemoApplication">
+    <configuration name="AuthServiceImplTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.shlee7131.financedemo.service.AuthServiceImplTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="AuthServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="finance-demo.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.shlee7131.financedemo.service.*" />
+          <option name="PATTERN" value="com.shlee7131.financedemo.service.account.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -155,7 +201,7 @@
       <module name="finance-demo.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.shlee7131.financedemo.service.*" />
+          <option name="PATTERN" value="com.shlee7131.financedemo.service.account.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -171,7 +217,7 @@
       <module name="finance-demo.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.shlee7131.financedemo.service.*" />
+          <option name="PATTERN" value="com.shlee7131.financedemo.service.account.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -186,7 +232,7 @@
       <module name="finance-demo.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.shlee7131.financedemo.service.*" />
+          <option name="PATTERN" value="com.shlee7131.financedemo.service.account.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -194,20 +240,6 @@
       <option name="MAIN_CLASS_NAME" value="com.shlee7131.financedemo.service.UserServiceImplTest" />
       <option name="METHOD_NAME" value="회원탈퇴" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.shlee7131.financedemo.service in finance-demo.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="finance-demo.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.shlee7131.financedemo.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.shlee7131.financedemo.service" />
-      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -221,11 +253,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AuthServiceImplTest.로그인_성공" />
         <item itemvalue="JUnit.AuthServiceImplTest" />
+        <item itemvalue="JUnit.AuthServiceImplTest.로그인_성공" />
+        <item itemvalue="Gradle.AuthServiceImplTest" />
         <item itemvalue="JUnit.UserServiceImplTest.회원탈퇴" />
         <item itemvalue="JUnit.UserServiceImplTest" />
-        <item itemvalue="JUnit.com.shlee7131.financedemo.service in finance-demo.test" />
       </list>
     </recent_temporary>
   </component>

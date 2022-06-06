@@ -20,7 +20,7 @@ public class Account extends Commons{
     private User user;
 
     @Enumerated(value = EnumType.STRING)
-    private CurrencyCode currency_code;
+    private CurrencyCode currencyCode;
 
     @OneToMany(mappedBy = "account")
     private List<Journal> journals = new ArrayList<Journal>();
@@ -29,8 +29,8 @@ public class Account extends Commons{
         this.user = user;
     }
 
-    public void setCurrency_code(CurrencyCode currency_code) {
-        this.currency_code = currency_code;
+    public void setCurrencyCode(CurrencyCode currency_code) {
+        this.currencyCode = currency_code;
     }
 
     public void setJournals(List<Journal> journals) {
