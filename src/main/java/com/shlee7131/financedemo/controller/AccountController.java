@@ -42,4 +42,10 @@ public class AccountController {
 
         return new ResponseEntity<>(accountRespDto, HttpStatus.CREATED);
     }
+
+    @DeleteMapping("/accounts/{id}")
+    public ResponseEntity<?> deleteAccount(@PathVariable long id) {
+        accountAdapter.deleteAccount(id);
+        return new ResponseEntity<>(null, HttpStatus.NO_CONTENT);
+    }
 }

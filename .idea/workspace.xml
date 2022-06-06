@@ -5,32 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1f06e67-4eff-46a7-9ea9-bbdc93b79dfb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/controller/AccountController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/AuthUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/account/AccountAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/account/AccountAdapterImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/SessionStorage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/SessionStorage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/TestConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/entity/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/entity/Account.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/infra/AuthInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/infra/AuthInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/service/AuthService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/service/AuthServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/service/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/shlee7131/financedemo/TestConfigContainer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/SessionStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/SessionStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/entity/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/entity/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/infra/AuthInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/infra/AuthInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/repository/AccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/repository/AccountRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/account/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/account/AccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/dto/AccountReqDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/dto/AccountReqDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/dto/AccountRespDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/dto/AccountRespDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/dto/AuthInfoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/dto/AuthInfoDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/controller/AccountController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
