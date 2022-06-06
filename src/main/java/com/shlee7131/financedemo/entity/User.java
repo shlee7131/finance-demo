@@ -16,7 +16,7 @@ import java.util.List;
 @Table(name="Users")
 @EntityListeners(AuditingEntityListener.class)
 public class User extends Commons {
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(unique = true)
     private String email;

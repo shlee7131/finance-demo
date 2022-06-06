@@ -12,7 +12,7 @@ import java.util.List;
 @NoArgsConstructor
 @Table(indexes = {@Index(name="fk_user", columnList = "user_id", unique = false)})
 public class Account extends Commons{
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @ManyToOne
@@ -29,8 +29,8 @@ public class Account extends Commons{
         this.user = user;
     }
 
-    public void setCurrencyCode(CurrencyCode currencyCode) {
-        this.currencyCode = currencyCode;
+    public void setCurrencyCode(CurrencyCode currency_code) {
+        this.currencyCode = currency_code;
     }
 
     public void setJournals(List<Journal> journals) {
