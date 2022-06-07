@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1f06e67-4eff-46a7-9ea9-bbdc93b79dfb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/shlee7131/financedemo/service/AccountServiceImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/entity/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/entity/Account.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/entity/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/entity/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/user/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/user/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/account/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/account/AccountServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +24,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -54,9 +56,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -131,6 +133,7 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.shlee7131.financedemo.service.user" />
       <recent name="com.shlee7131.financedemo.entity" />
       <recent name="com.shlee7131.financedemo.service" />
       <recent name="com.shlee7131.financedemo.infra" />
@@ -140,85 +143,82 @@
       <recent name="com.shlee7131.financedemo.infra" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.FinanceDemoApplication">
-    <configuration name="AuthServiceImplTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.shlee7131.financedemo.service.AuthServiceImplTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="AuthServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AccountServiceImplTest.계정_목록">
+    <configuration name="AccountServiceImplTest.계정_생성" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="finance-demo.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.shlee7131.financedemo.service.account.*" />
+          <option name="PATTERN" value="com.shlee7131.financedemo.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.shlee7131.financedemo.service" />
-      <option name="MAIN_CLASS_NAME" value="com.shlee7131.financedemo.service.AuthServiceImplTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AuthServiceImplTest.로그인_성공" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="finance-demo.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.shlee7131.financedemo.service.account.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.shlee7131.financedemo.service" />
-      <option name="MAIN_CLASS_NAME" value="com.shlee7131.financedemo.service.AuthServiceImplTest" />
-      <option name="METHOD_NAME" value="로그인_성공" />
+      <option name="MAIN_CLASS_NAME" value="com.shlee7131.financedemo.service.AccountServiceImplTest" />
+      <option name="METHOD_NAME" value="계정_생성" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AccountServiceImplTest.계정_삭제" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="finance-demo.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.shlee7131.financedemo.service.account.*" />
+          <option name="PATTERN" value="com.shlee7131.financedemo.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.shlee7131.financedemo.service" />
-      <option name="MAIN_CLASS_NAME" value="com.shlee7131.financedemo.service.UserServiceImplTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.shlee7131.financedemo.service.AccountServiceImplTest" />
+      <option name="METHOD_NAME" value="계정_삭제" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceImplTest.회원탈퇴" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AccountServiceImplTest.계정_목록" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="finance-demo.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.shlee7131.financedemo.service.account.*" />
+          <option name="PATTERN" value="com.shlee7131.financedemo.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.shlee7131.financedemo.service" />
-      <option name="MAIN_CLASS_NAME" value="com.shlee7131.financedemo.service.UserServiceImplTest" />
-      <option name="METHOD_NAME" value="회원탈퇴" />
+      <option name="MAIN_CLASS_NAME" value="com.shlee7131.financedemo.service.AccountServiceImplTest" />
+      <option name="METHOD_NAME" value="계정_목록" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountServiceImplTest.계정_생성_복수" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="finance-demo.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shlee7131.financedemo.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shlee7131.financedemo.service" />
+      <option name="MAIN_CLASS_NAME" value="com.shlee7131.financedemo.service.AccountServiceImplTest" />
+      <option name="METHOD_NAME" value="계정_생성_복수" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountServiceImplTest.계정_삭제_유효성_실패" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="finance-demo.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shlee7131.financedemo.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shlee7131.financedemo.service" />
+      <option name="MAIN_CLASS_NAME" value="com.shlee7131.financedemo.service.AccountServiceImplTest" />
+      <option name="METHOD_NAME" value="계정_삭제_유효성_실패" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -233,11 +233,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AuthServiceImplTest" />
-        <item itemvalue="JUnit.AuthServiceImplTest.로그인_성공" />
-        <item itemvalue="Gradle.AuthServiceImplTest" />
-        <item itemvalue="JUnit.UserServiceImplTest.회원탈퇴" />
-        <item itemvalue="JUnit.UserServiceImplTest" />
+        <item itemvalue="JUnit.AccountServiceImplTest.계정_목록" />
+        <item itemvalue="JUnit.AccountServiceImplTest.계정_삭제_유효성_실패" />
+        <item itemvalue="JUnit.AccountServiceImplTest.계정_삭제" />
+        <item itemvalue="JUnit.AccountServiceImplTest.계정_생성_복수" />
+        <item itemvalue="JUnit.AccountServiceImplTest.계정_생성" />
       </list>
     </recent_temporary>
   </component>

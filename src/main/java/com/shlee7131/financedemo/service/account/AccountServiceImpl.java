@@ -2,12 +2,15 @@ package com.shlee7131.financedemo.service.account;
 
 import com.shlee7131.financedemo.entity.Account;
 import com.shlee7131.financedemo.entity.User;
+import com.shlee7131.financedemo.exception.ResourceNotFoundException;
 import com.shlee7131.financedemo.repository.AccountRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+
+import java.util.Optional;
 
 @Slf4j
 @Service
@@ -32,6 +35,8 @@ public class AccountServiceImpl implements AccountService {
 
     @Override
     public void deleteAccount(long id) {
+        Optional<Account> byId = accountRepository.findById(id);
+        if (byId.isEmpty()) throw new ResourceNotFoundException("해당 계좌를 찾을 수 없습니다");
         accountRepository.deleteById(id);
     }
 }
