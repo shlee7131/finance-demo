@@ -10,11 +10,11 @@ import java.util.List;
 @Entity
 @NoArgsConstructor
 public class AccountSubject extends Commons{
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String title;
 
-    @OneToMany(mappedBy = "account_subject")
+    @OneToMany(mappedBy = "accountSubject")
     private List<Ledger> ledgers = new ArrayList<>();
 
     public void setTitle(String title) {

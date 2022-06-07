@@ -1,5 +1,6 @@
 package com.shlee7131.financedemo.entity;
 
+import com.shlee7131.financedemo.entity.enums.CurrencyCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 

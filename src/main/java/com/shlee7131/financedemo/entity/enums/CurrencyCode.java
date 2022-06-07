@@ -1,4 +1,4 @@
-package com.shlee7131.financedemo.entity;
+package com.shlee7131.financedemo.entity.enums;
 
 public enum CurrencyCode {
     KRW,    // 한국
