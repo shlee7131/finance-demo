@@ -1,7 +1,7 @@
 package com.shlee7131.financedemo.service;
 
 import com.shlee7131.financedemo.entity.Account;
-import com.shlee7131.financedemo.entity.CurrencyCode;
+import com.shlee7131.financedemo.entity.enums.CurrencyCode;
 import com.shlee7131.financedemo.entity.User;
 import com.shlee7131.financedemo.exception.ResourceNotFoundException;
 import com.shlee7131.financedemo.service.account.AccountService;

@@ -1,6 +1,6 @@
 package com.shlee7131.financedemo.service.dto;
 
-import com.shlee7131.financedemo.entity.CurrencyCode;
+import com.shlee7131.financedemo.entity.enums.CurrencyCode;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
