@@ -16,23 +16,23 @@ public class CurrencyRate extends Commons{
     private Long id;
 
     @Enumerated(value = EnumType.STRING)
-    private CurrencyCode currency_code;
+    private CurrencyCode currencyCode;
 
-    private double buy_rate;
-    private double sell_rate;
+    private double buyRate;
+    private double sellRate;
 
     @CreationTimestamp
-    private LocalDate date_currency;
+    private LocalDate queriedDate;
 
-    public void setCurrency_code(CurrencyCode currency_code) {
-        this.currency_code = currency_code;
+    public void setCurrencyCode(CurrencyCode currencyCode) {
+        this.currencyCode = currencyCode;
     }
 
-    public void setBuy_rate(double buy_rate) {
-        this.buy_rate = buy_rate;
+    public void setBuyRate(double buyRate) {
+        this.buyRate = buyRate;
     }
 
-    public void setSell_rate(double sell_rate) {
-        this.sell_rate = sell_rate;
+    public void setSellRate(double sellRate) {
+        this.sellRate = sellRate;
     }
 }

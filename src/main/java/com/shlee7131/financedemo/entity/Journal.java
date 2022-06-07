@@ -19,18 +19,18 @@ public class Journal extends Commons{
     private Account account;
 
     @ManyToOne
-    private AccountSubject debit_subject;
+    private AccountSubject debitSubject;
     @Enumerated(EnumType.STRING)
-    private JournalAccountSign debit_sign;
+    private JournalAccountSign debitSign;
     @Column(nullable = false)
-    private int debit_amount;
+    private int debitAmount;
 
     @ManyToOne
-    private AccountSubject credit_subject;
+    private AccountSubject creditSubject;
     @Enumerated(EnumType.STRING)
-    private JournalAccountSign credit_sign;
+    private JournalAccountSign creditSign;
     @Column(nullable = false)
-    private int credit_amount;
+    private int creditAmount;
 
     private String briefs;
 
@@ -38,28 +38,28 @@ public class Journal extends Commons{
         this.account = account;
     }
 
-    public void setDebit_subject(AccountSubject debit_subject) {
-        this.debit_subject = debit_subject;
+    public void setDebitSubject(AccountSubject accountSubject) {
+        this.debitSubject = accountSubject;
     }
 
-    public void setDebit_sign(JournalAccountSign debit_sign) {
-        this.debit_sign = debit_sign;
+    public void setDebitSign(JournalAccountSign debitSign) {
+        this.debitSign = debitSign;
     }
 
-    public void setDebit_amount(int debit_amount) {
-        this.debit_amount = debit_amount;
+    public void setDebitAmount(int debitAmount) {
+        this.debitAmount = debitAmount;
     }
 
-    public void setCredit_subject(AccountSubject credit_subject) {
-        this.credit_subject = credit_subject;
+    public void setCreditSubject(AccountSubject creditSubject) {
+        this.creditSubject = creditSubject;
     }
 
-    public void setCredit_sign(JournalAccountSign credit_sign) {
-        this.credit_sign = credit_sign;
+    public void setCreditSign(JournalAccountSign creditSign) {
+        this.creditSign = creditSign;
     }
 
-    public void setCredit_amount(int credit_amount) {
-        this.credit_amount = credit_amount;
+    public void setCreditAmount(int creditAmount) {
+        this.creditAmount = creditAmount;
     }
 
     public void setBriefs(String briefs) {
