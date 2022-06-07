@@ -4,6 +4,7 @@ import com.shlee7131.financedemo.entity.Account;
 import com.shlee7131.financedemo.entity.Journal;
 import com.shlee7131.financedemo.entity.User;
 import com.shlee7131.financedemo.entity.enums.CurrencyCode;
+import com.shlee7131.financedemo.entity.enums.JournalAccountSign;
 import com.shlee7131.financedemo.repository.JournalRepository;
 import com.shlee7131.financedemo.service.account.AccountService;
 import com.shlee7131.financedemo.service.user.UserService;
@@ -12,6 +13,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
@@ -51,7 +54,7 @@ class JournalServiceImplTest {
 
     @Test
     void 원장_생성(){
-        Journal save = journalRepository.save(journal);
+        Journal save = journalService.createJournal(journal);
 
         Page<Account> accounts = accountService.readByUserWithPage(user, null);
         Account account = accounts.getContent().get(0);
@@ -63,14 +66,25 @@ class JournalServiceImplTest {
     @Test
     void 원장_수정() {
         journal.setBriefs("원본");
+        journal.setDebitSign(JournalAccountSign.PLUS);
+        journal.setCreditSign(JournalAccountSign.MINUS);
+        journal.setDebitAmount(1000);
+        journal.setCreditAmount(1000);
+
         Journal save = journalRepository.save(journal);
 
         Long id = save.getId();
-        Journal saved = journalRepository.findById(id).get();
-        saved.setBriefs("수정본");
+        Journal journal = new Journal();
+        journal.setBriefs("수정본");
+        journalService.updateJournal(id, journal);
+
         Journal updated = journalRepository.findById(id).get();
 
         assertThat(updated.getBriefs()).isEqualTo("수정본");
+        assertThat(updated.getDebitAmount()).isEqualTo(1000);
+        assertThat(updated.getCreditAmount()).isEqualTo(1000);
+        assertThat(updated.getDebitSign()).isEqualTo(JournalAccountSign.PLUS);
+        assertThat(updated.getCreditSign()).isEqualTo(JournalAccountSign.MINUS);
     }
 
     @Test
@@ -78,7 +92,7 @@ class JournalServiceImplTest {
         Journal save = journalRepository.save(journal);
 
         Long id = save.getId();
-        journalRepository.deleteById(id);
+        journalService.deleteJournal(id);
 
         Optional<Journal> byId = journalRepository.findById(id);
         Page<Account> accounts = accountService.readByUserWithPage(user, null);
@@ -90,13 +104,13 @@ class JournalServiceImplTest {
 
     @Test
     void 원장_목록(){
-        for(int i = 0 ; i < 3 ; i++) {
+        for(int i = 0 ; i < 13 ; i++) {
             Journal temp = new Journal();
             temp.setAccount(account);
-            journalRepository.save(temp);
+            journalService.createJournal(temp);
         }
 
-        List<Journal> all = journalRepository.findAll();
-        assertThat(all.size()).isEqualTo(3);
+        Page<Journal> all = journalService.readJournalsWithPage(this.account, PageRequest.of(0,20, Sort.unsorted()));
+        assertThat(all.getContent().size()).isEqualTo(13);
     }
 }
