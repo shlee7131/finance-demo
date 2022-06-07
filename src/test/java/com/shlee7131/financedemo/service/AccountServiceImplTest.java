@@ -3,7 +3,6 @@ package com.shlee7131.financedemo.service;
 import com.shlee7131.financedemo.entity.Account;
 import com.shlee7131.financedemo.entity.CurrencyCode;
 import com.shlee7131.financedemo.entity.User;
-import com.shlee7131.financedemo.exception.BadRequestException;
 import com.shlee7131.financedemo.exception.ResourceNotFoundException;
 import com.shlee7131.financedemo.service.account.AccountService;
 import com.shlee7131.financedemo.service.user.UserService;
@@ -13,8 +12,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.*;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.Collections;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
