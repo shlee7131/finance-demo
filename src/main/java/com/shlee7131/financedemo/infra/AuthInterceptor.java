@@ -19,13 +19,11 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class AuthInterceptor implements HandlerInterceptor {
 
-    private final AuthService authService;
-
     @Override
     // RuntimeException 추가
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         Cookie[] cookies = request.getCookies();
-
+        log.info("{}", cookies);
         if (cookies == null ) throw new BadRequestException("로그인 해주세요");
 
         Optional<Cookie> session = Arrays

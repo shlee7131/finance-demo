@@ -1,17 +1,13 @@
 package com.shlee7131.financedemo.service;
 
 import com.shlee7131.financedemo.SessionStorage;
-import com.shlee7131.financedemo.entity.User;
 import com.shlee7131.financedemo.service.auth.AuthAdapter;
-import com.shlee7131.financedemo.service.auth.AuthService;
 import com.shlee7131.financedemo.service.dto.AuthInfoDto;
 import com.shlee7131.financedemo.service.dto.UserReqDto;
 import com.shlee7131.financedemo.service.dto.UserRespDto;
-import com.shlee7131.financedemo.service.user.UserService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.annotation.Rollback;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
@@ -31,7 +27,6 @@ class AuthServiceImplTest {
     void 로그인_성공(){
         UserReqDto userReqDto = new UserReqDto("shlee7131@gmail.com", "asdf");
         AuthInfoDto register = authAdapter.register(userReqDto);
-
         Optional<String> sessionId = authAdapter.login(userReqDto);
         AuthInfoDto authInfoDto = sessionStorage.get(sessionId.get());
 

@@ -15,5 +15,4 @@ import java.util.List;
 public class AuthInfoDto {
     private Long id;
     private String email;
-    private List<Account> accounts;
 }

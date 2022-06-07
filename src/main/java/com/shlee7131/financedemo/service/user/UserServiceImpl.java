@@ -54,16 +54,4 @@ public class UserServiceImpl implements UserService{
         User updated = repository.save(find);
         return updated;
     }
-
-
-    public <T,R> R transform(T t, Class<R> type) {
-        R object = null;
-        try {
-            object = type.getConstructor().newInstance();
-            BeanUtils.copyProperties(t, object);
-        } catch (InstantiationException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {
-            e.printStackTrace();
-        }
-        return object;
-    }
 }

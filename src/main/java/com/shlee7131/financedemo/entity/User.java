@@ -16,7 +16,7 @@ import java.util.List;
 @Table(name="Users")
 @EntityListeners(AuditingEntityListener.class)
 public class User extends Commons {
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(unique = true)
     private String email;
@@ -43,7 +43,11 @@ public class User extends Commons {
         this.password = password;
     }
 
-    public void setAccounts(Account account) {
+    public void setAccounts(List<Account> accounts) {
+        this.accounts = accounts;
+    }
+
+    public void addAccount(Account account){
         this.accounts.add(account);
     }
 }
