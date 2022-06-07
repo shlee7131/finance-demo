@@ -14,6 +14,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.Page;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+import java.util.Optional;
+
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -43,11 +46,11 @@ class JournalServiceImplTest {
         accountService.createAccount(user, account);
 
         journal = new Journal();
+        journal.setAccount(account);
     }
 
     @Test
     void 원장_생성(){
-        journal.setAccount(account);
         Journal save = journalRepository.save(journal);
 
         Page<Account> accounts = accountService.readByUserWithPage(user, null);
@@ -59,16 +62,41 @@ class JournalServiceImplTest {
 
     @Test
     void 원장_수정() {
-        
+        journal.setBriefs("원본");
+        Journal save = journalRepository.save(journal);
+
+        Long id = save.getId();
+        Journal saved = journalRepository.findById(id).get();
+        saved.setBriefs("수정본");
+        Journal updated = journalRepository.findById(id).get();
+
+        assertThat(updated.getBriefs()).isEqualTo("수정본");
     }
 
     @Test
     void 원장_삭제() {
+        Journal save = journalRepository.save(journal);
 
+        Long id = save.getId();
+        journalRepository.deleteById(id);
+
+        Optional<Journal> byId = journalRepository.findById(id);
+        Page<Account> accounts = accountService.readByUserWithPage(user, null);
+        int journalsInAccount = accounts.getContent().get(0).getJournals().size();
+
+        assertThat(byId).isEmpty();
+        assertThat(journalsInAccount).isEqualTo(0);
     }
 
     @Test
     void 원장_목록(){
+        for(int i = 0 ; i < 3 ; i++) {
+            Journal temp = new Journal();
+            temp.setAccount(account);
+            journalRepository.save(temp);
+        }
 
+        List<Journal> all = journalRepository.findAll();
+        assertThat(all.size()).isEqualTo(3);
     }
 }

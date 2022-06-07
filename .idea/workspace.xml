@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1f06e67-4eff-46a7-9ea9-bbdc93b79dfb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/journal/JournalService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/journal/JournalServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/shlee7131/financedemo/service/journal/JournalServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/repository/JournalRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/repository/JournalRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/shlee7131/financedemo/service/journal/JournalServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/shlee7131/financedemo/service/journal/JournalServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,51 +142,18 @@
       <recent name="com.shlee7131.financedemo.infra" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JournalServiceImplTest.원장_생성">
-    <configuration name="AccountServiceImplTest.계정_삭제" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.JournalServiceImplTest">
+    <configuration name="JournalServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="finance-demo.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.shlee7131.financedemo.service.*" />
+          <option name="PATTERN" value="com.shlee7131.financedemo.service.journal.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.shlee7131.financedemo.service" />
-      <option name="MAIN_CLASS_NAME" value="com.shlee7131.financedemo.service.AccountServiceImplTest" />
-      <option name="METHOD_NAME" value="계정_삭제" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AccountServiceImplTest.계정_목록" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="finance-demo.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.shlee7131.financedemo.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.shlee7131.financedemo.service" />
-      <option name="MAIN_CLASS_NAME" value="com.shlee7131.financedemo.service.AccountServiceImplTest" />
-      <option name="METHOD_NAME" value="계정_목록" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AccountServiceImplTest.계정_삭제_유효성_실패" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="finance-demo.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.shlee7131.financedemo.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.shlee7131.financedemo.service" />
-      <option name="MAIN_CLASS_NAME" value="com.shlee7131.financedemo.service.AccountServiceImplTest" />
-      <option name="METHOD_NAME" value="계정_삭제_유효성_실패" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.shlee7131.financedemo.service.journal" />
+      <option name="MAIN_CLASS_NAME" value="com.shlee7131.financedemo.service.journal.JournalServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -209,16 +174,50 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.shlee7131.financedemo.service in finance-demo.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JournalServiceImplTest.원장_수정" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="finance-demo.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.shlee7131.financedemo.service.*" />
+          <option name="PATTERN" value="com.shlee7131.financedemo.service.journal.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.shlee7131.financedemo.service" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="PACKAGE_NAME" value="com.shlee7131.financedemo.service.journal" />
+      <option name="MAIN_CLASS_NAME" value="com.shlee7131.financedemo.service.journal.JournalServiceImplTest" />
+      <option name="METHOD_NAME" value="원장_수정" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JournalServiceImplTest.원장_삭제" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="finance-demo.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shlee7131.financedemo.service.journal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shlee7131.financedemo.service.journal" />
+      <option name="MAIN_CLASS_NAME" value="com.shlee7131.financedemo.service.journal.JournalServiceImplTest" />
+      <option name="METHOD_NAME" value="원장_삭제" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JournalServiceImplTest.원장_목록" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="finance-demo.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shlee7131.financedemo.service.journal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shlee7131.financedemo.service.journal" />
+      <option name="MAIN_CLASS_NAME" value="com.shlee7131.financedemo.service.journal.JournalServiceImplTest" />
+      <option name="METHOD_NAME" value="원장_목록" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -232,11 +231,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JournalServiceImplTest" />
+        <item itemvalue="JUnit.JournalServiceImplTest.원장_목록" />
+        <item itemvalue="JUnit.JournalServiceImplTest.원장_삭제" />
+        <item itemvalue="JUnit.JournalServiceImplTest.원장_수정" />
         <item itemvalue="JUnit.JournalServiceImplTest.원장_생성" />
-        <item itemvalue="JUnit.com.shlee7131.financedemo.service in finance-demo.test" />
-        <item itemvalue="JUnit.AccountServiceImplTest.계정_목록" />
-        <item itemvalue="JUnit.AccountServiceImplTest.계정_삭제_유효성_실패" />
-        <item itemvalue="JUnit.AccountServiceImplTest.계정_삭제" />
       </list>
     </recent_temporary>
   </component>
