@@ -31,7 +31,6 @@ public class Journal extends Commons{
     private JournalAccountSign creditSign;
     @Column(nullable = false)
     private int creditAmount;
-
     private String briefs;
 
     public void setAccount(Account account) {
