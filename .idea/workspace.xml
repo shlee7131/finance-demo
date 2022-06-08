@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1f06e67-4eff-46a7-9ea9-bbdc93b79dfb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/repository/AccountSubjectRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/repository/LedgerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/repository/TransactionCaseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/repository/JournalRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/repository/JournalRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/journal/JournalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/journal/JournalService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/journal/JournalServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/journal/JournalServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/shlee7131/financedemo/service/journal/JournalServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/shlee7131/financedemo/service/journal/JournalServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/entity/AccountSubject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/entity/AccountSubject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/entity/Journal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/shlee7131/financedemo/entity/Journal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/account/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/account/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/account/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shlee7131/financedemo/service/account/AccountServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,10 +59,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
-        <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="com.haulmont.jpb.JpaEntity" />
+        <option value="Enum" />
+        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -113,6 +118,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ex1-hello-jpa" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -123,6 +129,7 @@
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.shlee7131.financedemo.service.journal" />
+      <recent name="com.shlee7131.financedemo.service.dto" />
       <recent name="com.shlee7131.financedemo.service.account" />
       <recent name="com.shlee7131.financedemo.service" />
       <recent name="com.shlee7131.financedemo.usecase.user" />
@@ -145,7 +152,7 @@
       <recent name="com.shlee7131.financedemo.infra" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JournalServiceImplTest.원장_목록">
+  <component name="RunManager" selected="Spring Boot.FinanceDemoApplication">
     <configuration name="JournalServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="finance-demo.test" />
       <extension name="coverage">
@@ -234,11 +241,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.JournalServiceImplTest.원장_목록" />
         <item itemvalue="JUnit.JournalServiceImplTest.원장_생성" />
         <item itemvalue="JUnit.JournalServiceImplTest.원장_수정_Service" />
         <item itemvalue="JUnit.JournalServiceImplTest" />
-        <item itemvalue="JUnit.JournalServiceImplTest.원장_삭제" />
       </list>
     </recent_temporary>
   </component>
@@ -259,6 +264,7 @@
       <workItem from="1653986501059" duration="17767000" />
       <workItem from="1654135154850" duration="15224000" />
       <workItem from="1654215256253" duration="3774000" />
+      <workItem from="1654618299532" duration="6052000" />
     </task>
     <servers />
   </component>
