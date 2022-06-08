@@ -1,6 +1,5 @@
 package com.shlee7131.financedemo.entity;
 
-import com.shlee7131.financedemo.entity.enums.JournalAccountSign;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 

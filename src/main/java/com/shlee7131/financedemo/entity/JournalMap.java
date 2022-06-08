@@ -7,19 +7,19 @@ import javax.persistence.*;
 
 @Entity
 @Getter @NoArgsConstructor
-@Table(indexes = {@Index(name = "fk_transactionCase", columnList = "transactionCase")})
+@Table(indexes = {@Index(name = "fk_transactionCase", columnList = "transaction_case_id")})
 public class JournalMap extends Commons{
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @ManyToOne
-    @JoinColumn
+    @JoinColumn(name = "transaction_case_id")
     private TransactionCase transactionCase;
 
     @ManyToOne
-    @JoinColumn
+    @JoinColumn(name="debit_subject")
     private AccountSubject debitSubject;
 
     @ManyToOne
-    @JoinColumn
+    @JoinColumn(name="credit_subject")
     private AccountSubject creditSubject;
 }
