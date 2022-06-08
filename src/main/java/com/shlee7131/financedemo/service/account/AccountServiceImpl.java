@@ -27,6 +27,12 @@ public class AccountServiceImpl implements AccountService {
     }
 
     @Override
+    public Optional<Account> readById(long id) {
+        Optional<Account> byId = accountRepository.findById(id);
+        return byId;
+    }
+
+    @Override
     public Account createAccount(User user, Account account) {
         // account 생성은 시스템에서 처리한다
         account.setUser(user);
